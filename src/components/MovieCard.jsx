@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
 
-const MovieCard = ({title , description, posterURL , rating}) => {
+const MovieCard = ({title , posterURL}) => {
   // adding animation
   useEffect(()=>{
     AOS.init();
@@ -11,11 +11,9 @@ const MovieCard = ({title , description, posterURL , rating}) => {
   return (
     // Designing the card
     <div className='space-y-3'>
-        <div className='p-5 space-y-3' data-aos='zoom-out-up' data-aos-duration='3000'>
-          <img src={posterURL} className='w-60 h-80 object-cover' alt="" />
-          <p className='uppercase font-bold'>{title} </p>
-          <p>{description} </p>
-          <p className='font-semibold'>Rating: {rating} </p>
+        <div className='p-5 space-y-3' data-aos='fade-left' data-aos-duration='3000'>
+          <img src={posterURL} className='shadow-lg drop-shadow-lg w-80 h-100 object-fill mx-auto' alt="" />
+          <p className='uppercase font-bold text-center text-lg'>{title} </p>
         </div>
     </div>
   )
