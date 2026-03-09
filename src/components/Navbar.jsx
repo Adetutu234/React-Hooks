@@ -4,7 +4,7 @@ import {List} from "@phosphor-icons/react";
 
 const Navbar = ({ titleFilter, setTitleFilter }) => {
   return (
-    <div className='bg-[#2C3E50] text-white flex justify-between p-4 w-full text-center fixed z-10 top-0'>
+    <div className='bg-black text-white flex justify-between p-4 w-full text-center '>
         <p className="lg:text-2xl text-lg font-bold">🎥 Movie App</p>
       <div className="flex gap-1 ">
           <input
